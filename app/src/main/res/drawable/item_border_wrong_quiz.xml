@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke android:width="2dp"
+        android:color="@color/wrong_answer_border_quiz"/>
+    <solid android:color="@color/wrong_answer_background_quiz"/>
+    <corners android:radius="40dp"/>
+</shape>

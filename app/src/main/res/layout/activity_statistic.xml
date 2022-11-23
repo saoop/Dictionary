@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.StatisticActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbStatisticToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="4dp" />
+
+        <TextView
+            android:id="@+id/tvTotalNumberWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tbStatisticToolbar"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Total Number of Words: "
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvSevenDaysStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTotalNumberWords"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Words added in the last 7 days: "
+            android:textSize="19sp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/brSevenDaysStats"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/tvSevenDaysStats"
+            android:layout_margin="15dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/tvSevenDaysStatsReviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brSevenDaysStats"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Reviews in the last 7 days: "
+            android:textSize="19sp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/brSevenDaysStatsReviews"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/tvSevenDaysStatsReviews"
+            android:layout_margin="15dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+</ScrollView>

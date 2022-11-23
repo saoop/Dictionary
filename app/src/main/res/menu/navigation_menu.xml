@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dark_mode"
+        android:icon="@drawable/ic_baseline_dark_mode_24_black"
+        android:title="Dark Mode" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_baseline_settings_24_black"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_about_the_app"
+        android:icon="@drawable/ic_baseline_person_outline_24_black"
+        android:title="About the app" />
+
+</menu>

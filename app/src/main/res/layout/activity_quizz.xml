@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.QuizzActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbActivityQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        />
+
+    <TextView
+        android:id="@+id/tvQuestionWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:text="SampleWord"
+        android:textSize="32sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Answer1"
+            android:textSize="22sp"
+            android:background="@drawable/item_border_normal_quiz"
+            android:layout_margin="2dp"
+            android:padding="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tvOption2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Answer1"
+            android:textSize="22sp"
+            android:background="@drawable/item_border_normal_quiz"
+            android:layout_margin="2dp"
+            android:padding="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tvOption3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Answer1"
+            android:textSize="22sp"
+            android:background="@drawable/item_border_normal_quiz"
+            android:layout_margin="2dp"
+            android:padding="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tvOption4"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Answer1"
+            android:textSize="22sp"
+            android:background="@drawable/item_border_normal_quiz"
+            android:layout_margin="2dp"
+            android:padding="7dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSubmitBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:background="#EEEEEE"/>
+
+
+</LinearLayout>
