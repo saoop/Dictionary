@@ -168,7 +168,7 @@ class SqliteOpenHelper(context: Context, factory: SQLiteDatabase.CursorFactory?)
 
         for (i in 1..7){
             val answ = sdf.format(cal.time)
-            val _count = "SELECT COUNT(*) FROM " + "'"  + tableName + "'" + " WHERE " + COLUMN_WORD_DATE + " = ?"
+            val _count = "SELECT COUNT(*) FROM " + "'"  + _tableName + "'" + " WHERE " + COLUMN_WORD_DATE + " = ?"
             val cursor = db.rawQuery(_count, arrayOf(answ) )
             var count = 0
             if(null != cursor){
@@ -194,7 +194,7 @@ class SqliteOpenHelper(context: Context, factory: SQLiteDatabase.CursorFactory?)
 
         for (i in 1..7){
             val answ = sdf.format(cal.time)
-            val _count = "SELECT COUNT(*) FROM " + "'"  + tableName + "'" + " WHERE " + COLUMN_WORD_DATE_LAST_REVIEWED + " = ?"
+            val _count = "SELECT COUNT(*) FROM " + "'"  + _tableName + "'" + " WHERE " + COLUMN_WORD_DATE_LAST_REVIEWED + " = ?"
             val cursor = db.rawQuery(_count, arrayOf(answ) )
             var count = 0
             if(null != cursor){
