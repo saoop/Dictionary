@@ -31,6 +31,7 @@ class WordCollectionAdapter(val context: Context, val items: ArrayList<ItemColle
             intent.putExtra(Constants.TABLE_NAME, holder.tvCollectionName.text.toString())
             context.startActivity(intent)
         }
+        //holder.tvCollectionName.setOnLongClickListener
 
         holder.btnDelete.setOnClickListener{
             //deleteCollection(holder.tvCollectionName.text.toString(), position)
